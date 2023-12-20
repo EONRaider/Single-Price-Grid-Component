@@ -1,29 +1,32 @@
 # Frontend Mentor - Project Name solution
 
-[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/project-name?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/project-name)
+[![CodeFactor Grade](https://img.shields.io/codefactor/grade/github/EONRaider/single-price-grid-component?label=CodeFactor&logo=codefactor&style=flat-square)](https://www.codefactor.io/repository/github/eonraider/single-price-grid-component)
 [![FrontendMentor](https://img.shields.io/badge/FrontendMentor-EONRaider-blue?style=flat-square)](https://www.frontendmentor.io/profile/EONRaider)
 
-This is a solution to the [Project Name](https://www.frontendmentor.io/challenges/). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to
+the [Single Price Grid Component](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc).
+Frontend Mentor challenges help you
+improve your coding skills by building realistic projects.
 
 ## Table of contents
 
 - [Overview](#overview)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
 - [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
 
 ## Overview
 
-A short description of the project
-
 ### Screenshot
+
+![Single-Price-Grid-Component](https://github.com/EONRaider/Results-Summary-Component/assets/15611424/d3b83957-0bca-4761-a474-94bf0de4a7dd)
 
 ### Links
 
-- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/project-name)
-- [Check the Live Site](https://project-name.netlify.app/)
+- [My Solution on Frontend Mentor]()
+- [Check the Live Site](https://eonraider-single-price-grid.netlify.app/)
 
 ## My process
 
@@ -41,3 +44,6 @@ A short description of the project
 - Cube CSS methodology
 
 ### What I learned
+
+- This is the first time I apply CSS Grid on a project. It went smoothly. Next time I'd like to leverage the grid
+  settings, so I don't rely so much on media queries when implementing responsiveness.

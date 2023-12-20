@@ -1,5 +1,5 @@
 {
-  "name": "project-name",
+  "name": "single-price-grid-component",
   "version": "1.0.0",
   "description": "A brief description of the project",
   "main": "app.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EONRaider/Project-Name.git"
+    "url": "git+https://github.com/EONRaider/Single-Price-Grid-Component.git"
   },
   "author": "EONRaider",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EONRaider/Project-Name/issues"
+    "url": "https://github.com/EONRaider/Single-Price-Grid-Component/issues"
   },
-  "homepage": "https://github.com/EONRaider/Project-Name#readme",
+  "homepage": "https://github.com/EONRaider/Single-Price-Grid-Component#readme",
   "prettier": {
     "trailingComma": "es5",
     "tabWidth": 2,

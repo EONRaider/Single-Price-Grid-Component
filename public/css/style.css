@@ -15,7 +15,7 @@ html {
 }
 
 /* Remove default margin in favour of better control in authored CSS */
-body, h1, h2, p {
+body, h1, h2, h3, p {
     margin: 0;
 }
 
@@ -28,9 +28,239 @@ img {
 /* === END CSS RESET === */
 
 /* COMPOSITION */
+body {
+    height: 100vh;
+}
+
+.card {
+    display: grid;
+    overflow: clip;
+    font-family: 'Karla', sans-serif;
+}
 
 /* UTILITIES */
+:root {
+    --clr-white: #FFFFFF;
+    --clr-blue-100: #E6EFF5;
+    --clr-blue-200: #9AA7BE;
+    --clr-green-200: #C0DF33;
+    --clr-green-400: #a9c42b;
+    --clr-teal-200: #2AB3B1;
+    --clr-teal-400: #6BCCCA;
+    --clr-shadow-100: rgba(0, 0, 0, 0.10);
+    --clr-shadow-200: rgba(0, 81, 171, 0.15);
+}
+
+.flex-center-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-start-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.bg-primary {
+    background-color: var(--clr-blue-100);
+}
+
+.bg-white {
+    background-color: var(--clr-white);
+}
+
+.bg-teal-200 {
+    background-color: var(--clr-teal-200);
+}
+
+.bg-teal-400 {
+    background-color: var(--clr-teal-400);
+}
+
+.b-shadow-100 {
+    box-shadow: 0 15px 30px 0 var(--clr-shadow-200);
+}
+
+.b-radius-primary {
+    border-radius: 8px;
+}
 
 /* BLOCK */
+.call-to-action__title {
+    color: var(--clr-teal-200);
+    font-weight: 700;
+}
+
+.call-to-action__subtitle {
+    color: var(--clr-green-200);
+    font-weight: 700;
+    margin-top: 24px;
+}
+
+.call-to-action__text {
+    color: var(--clr-blue-200);
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.subscription, .perks {
+    color: var(--clr-white);
+}
+
+.subscription__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.225px;
+}
+
+.subscription-price-block {
+    margin-top: 18px;
+}
+
+.subscription__price {
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+}
+
+.subscription__period {
+    margin-left: 11px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    opacity: 0.5;
+}
+
+.subscription__text {
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+}
+
+.subscription__button {
+    width: 100%;
+    height: 48px;
+    margin-top: 26px;
+    background-color: var(--clr-green-200);
+    border: none;
+    box-shadow: 0 10px 10px 0 var(--clr-shadow-100);
+    border-radius: 5px;
+    color: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
+
+.subscription__button:hover {
+    background-color: var(--clr-green-400);
+    cursor: pointer;
+}
+
+.perks__title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.225px;
+}
+
+.perks__items {
+    margin-top: 18px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.175px;
+    opacity: 0.75;
+}
 
 /* EXCEPTIONS */
+@media only screen and (width >= 768px) {
+    .card {
+        width: 635px;
+        height: 475px;
+        grid-template: " join    join" 216px
+                       " sub     why"  1fr /
+                         317px   1fr;
+    }
+
+    .call-to-action {
+        grid-area: join;
+        padding: 40px;
+    }
+
+    .call-to-action__title {
+        font-size: 24px;
+        letter-spacing: -0.3px;
+    }
+
+    .call-to-action__subtitle {
+        font-size: 18px;
+        letter-spacing: -0.225px;
+    }
+
+    .call-to-action__text {
+        margin-top: 11px;
+        font-size: 16px;
+        letter-spacing: -0.2px;
+    }
+
+    .subscription {
+        grid-area: sub;
+        padding: 40px 39px 39px 40px;
+    }
+
+    .perks {
+        grid-area: why;
+        padding: 40px;
+    }
+}
+
+@media only screen and (width < 768px) {
+    .card {
+        width: 311px;
+    }
+
+    .card > * {
+        padding: 0 24px;
+    }
+
+    .card > :first-child {
+        padding-top: 28px;
+    }
+
+    .card > :last-child {
+        padding-bottom: 24px;
+    }
+
+    .call-to-action {
+        height: 267px;
+    }
+
+    .call-to-action__title {
+        font-size: 20px;
+        letter-spacing: -0.25px;
+    }
+
+    .call-to-action__subtitle {
+        font-size: 15px;
+        letter-spacing: -0.187px;
+    }
+
+    .call-to-action__text {
+        margin-top: 16px;
+        font-size: 14px;
+        letter-spacing: -0.175px;
+    }
+
+    .subscription {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .perks {
+        padding-top: 24px;
+    }
+}
