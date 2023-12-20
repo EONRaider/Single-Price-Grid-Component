@@ -25,7 +25,7 @@ improve your coding skills by building realistic projects.
 
 ### Links
 
-- [My Solution on Frontend Mentor]()
+- [My Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-html5css3-single-price-grid-component-oA6jm4it13)
 - [Check the Live Site](https://eonraider-single-price-grid.netlify.app/)
 
 ## My process
